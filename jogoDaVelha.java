@@ -1,9 +1,9 @@
 package AC1;
 
-/*  MATHEUS DE JESUS OLIVEIRA
+/*  	MATHEUS DE JESUS OLIVEIRA
  * 	GABRIELA RODRIGUES DE OLIVEIRA  
  * 	AC1
- * 	CIENCIA DA COMPUTA«√O (MANH√)
+ * 	CIENCIA DA COMPUTA√á√ÉO (MANH√É)
  */
 
 import java.util.Scanner;
@@ -48,7 +48,7 @@ public class jogoDaVelha {
 		for (int linha = 0; linha < 3; linha++) {
 			for (int coluna = 0; coluna < 3; coluna++) {
 				if (M[linha][coluna] == ' ') {
-					// tem algum valor vazio, ent„o segue o jogo
+					// tem algum valor vazio, ent√£o segue o jogo
 					valor = -1;
 				}
 			}
@@ -107,9 +107,9 @@ public class jogoDaVelha {
         	
         	// O
             Scanner entrada = new Scanner(System.in);
-            System.out.println("\njogador '" +player2+ "' informe a linha: possÌveis valores: 0, 1, 2");
+            System.out.println("\njogador '" +player2+ "' informe a linha: poss√≠veis valores: 0, 1, 2");
             int linhaO = entrada.nextInt();
-            System.out.println("jogador '" +player2+ "' informa a coluna: possÌveis valores: 0, 1, 2");
+            System.out.println("jogador '" +player2+ "' informa a coluna: poss√≠veis valores: 0, 1, 2");
             int colunaO = entrada.nextInt();
             if (step(tabuleiro, linhaO, colunaO, player2)) {
             	printMatriz(tabuleiro);
@@ -125,16 +125,16 @@ public class jogoDaVelha {
                 } else {
                 	
                 	// X
-                    System.out.println("\njogador '" +player1+ "' informe a linha: possÌveis valores: 0, 1, 2");
+                    System.out.println("\njogador '" +player1+ "' informe a linha: poss√≠veis valores: 0, 1, 2");
                     int linhaX = entrada.nextInt();
-                    System.out.println("jogador '" +player1+ "' informe a coluna: possÌveis valores: 0, 1, 2");
+                    System.out.println("jogador '" +player1+ "' informe a coluna: poss√≠veis valores: 0, 1, 2");
                     int colunaX = entrada.nextInt();
                     while (step(tabuleiro, linhaX, colunaX, player1) == false) {
                     	printMatriz(tabuleiro);
-                        System.out.println("\nessa posiÁ„o j· est· ocupada");
-                        System.out.println("jogador '" +player1+ "'\n informe a linha: possÌveis valores: 0, 1, 2");
+                        System.out.println("\nessa posi√ß√£o j√° est√° ocupada");
+                        System.out.println("jogador '" +player1+ "'\n informe a linha: poss√≠veis valores: 0, 1, 2");
                         linhaX = entrada.nextInt();
-                        System.out.println("jogador '" +player1+ "' informe a coluna: possÌveis valores: 0, 1, 2");
+                        System.out.println("jogador '" +player1+ "' informe a coluna: poss√≠veis valores: 0, 1, 2");
                         colunaX = entrada.nextInt();
                             
                     }
@@ -154,7 +154,7 @@ public class jogoDaVelha {
                 }
                 
             }else{
-                System.out.println("essa posiÁ„o j· est· ocupada, jogue em outra posiÁ„o");
+                System.out.println("essa posi√ß√£o j√° est√° ocupada, jogue em outra posi√ß√£o");
                 continue;
             }
             
